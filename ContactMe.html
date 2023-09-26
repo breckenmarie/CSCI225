@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <div id="page">
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="index.html">Homepage</a>
+                <p><!--Inserts a blank line in between input fields--></p>
+            </nav>
+        </div>
+        <div id="content">
+            <div class="body">
+                <iframe width="600" height="450" frameborder="0" src="https://www.youtube.com/embed/gIIkb_Nsmio?si=gB2QF9MMKGtpvOdB"></iframe>
+            </div>
+            <div class="form">
+                <form>
+                    <fieldset>
+                        <legend>Feedback</legend>
+                        <label>
+                            First Name: <input type="text" name="fname" placeholder="Anonymous" required>
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <label>
+                            Last Name: <input type="text" name="lname" placeholder="Anonymous" required>
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+                        
+                        <label>
+                            Email: <input type="email" name="mail" placeholder="name@domain.com">
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <label>
+                            Telephone: <input type="tel" name="telephone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <!--Checkbox Code-->
+
+                        <label>
+                            What are some things you like about this website?<br>
+                        </label>
+
+                        <label>
+                            Site Design<input type="checkbox" name="thingsliked" value="Site Design"><br>
+                        </label>
+
+                        <label>
+                            Content<input type="checkbox" name="thingsliked" value="Content"><br>
+                        </label>
+
+                        <label>
+                            Ease of Use<input type="checkbox" name="thingsliked" value="Ease of Use"><br>
+                        </label>
+
+                        <label>
+                            Optimization<input type="checkbox" name="thingsliked" value="Optimization">
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <!--Radio Button Code-->
+                        <label>
+                            Would you recommend this website to a friend?<br>
+                        </label>
+
+                        <label>
+                            Yes<input type="radio" name="recommended" value="yes">
+                        </label>
+
+                        <label>
+                            No<input type="radio" name="recommended" value="no">
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <label>
+                            Choose your favorite website: <br>
+                            <select name="favsite">
+                                <option value="Google">Google</option>
+                                <option value="YouTube">YouTube</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Twitter">Twitter</option>
+                            </select>
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <label>
+                            How would you rate your favorite website?<br>
+                            1<input type="range" name="rating" min="1" max="10">10
+                        </label>
+
+                        <p><!--Inserts a blank line in between input fields--></p>
+
+                        <label>
+                           Additional Comments<br>
+                            <textarea name="comment" rows="5" cols="50"></textarea>
+                        </label>
+
+                        <p>
+                            <input type="submit" name="submit" value="Submit"> <input type="reset" name="reset" value="Reset">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
