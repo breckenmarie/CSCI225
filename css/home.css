@@ -1,0 +1,249 @@
+/*Style Sheet created by Brecken Merrill*/
+
+/*00:CSS Variables*/
+
+:root{
+    --navbar-color:#dc9e7a;
+    --navbar-outline:#d09471;
+    --navbar-tab-color:#d07183;
+    --navbar-tab-outline:#c16777;
+    --header-color:#d08098;
+    --header-color-outline:#bc7187;
+    --header-text-color:#9c445c;
+    --header-textshadow-color:#b06d81;
+    --footbar-color:#985d98c0;
+    --footbar-outline:#814b81c0;
+    --footbar-text-color:#f4bef4;
+    --page-width:33vw;
+    --page-height:55vh;
+}
+
+/*01:Colors*/
+
+body{
+    background-image: url(../img/sailormoon.gif);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+/*02:Topography*/
+
+ol{
+    list-style-image: url(../img/star.png);
+    color:var(--header-text-color);
+    font-weight:normal;
+}
+
+
+a {
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #d07183;
+    color: #d07183;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+     box-shadow: inset 150px 0 0 0 #d07183;
+     color:white;
+}
+
+h1{
+    color: var(--header-text-color);
+    text-shadow: 1px 3px var(--header-textshadow-color); 
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing: 1px;
+}
+
+P{
+    line-height: 2em;
+    text-align: left;
+}
+p::first-letter{
+    font-family: 'Rochester';
+    font-size: 2em;
+}
+
+/*03:Layout*/
+
+div.navbar{
+    background-color: var(--navbar-color);
+    border: 1px solid var(--navbar-outline);
+    border-radius: 50px 50px 50px 50px / 150px 150px 150px 150px;
+    overflow: hidden;
+    width: 800px;
+    margin: auto;
+}
+
+div.navbar ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 8px;
+}
+
+div.navbar li{
+    display: inline-table;
+    margin-left: 40px;
+    text-align: center;
+}
+
+div.navbar li a{
+    color: rgb(255, 225, 199);
+}
+
+div.introduction h1, div.assignment h1, div.portfolio h1, div.schedule h1, div.contact p{
+    background-color: var(--header-color);
+    border: 1px solid var(--header-color-outline);
+    border-radius: 50px 50px 50px 50px / 150px 150px 150px 150px;
+    visibility: visible;
+}
+
+div.introduction h1{
+    position: fixed;
+    left: 10vw;
+    top: 20vh;
+}
+
+div.assignment h1{
+    position: fixed;
+    left: 15vw;
+    bottom: 45vh;
+
+}
+
+div.portfolio h1{
+    position: fixed;
+    right: 15vw;
+    top: 20vh;
+}
+div.schedule h1{
+    position: fixed;
+    right: 20vw;
+    bottom: 45vh;
+}
+
+div.contact p{
+    background-color: var(--footbar-color);
+    border: 1px solid var(--footbar-outline);
+    border-radius: 50% 50% 52% 52% / 13% 13% 13% 13%;
+    position: fixed;
+    left: 45%;
+    bottom: 5vh;
+}
+
+
+
+div.introduction, div.assignment, div.portfolio, div.schedule, div.contact{
+    background-color: #facad1eb;
+    border-right: 3px solid #e8a8b2;
+    border-bottom: 3px solid #e8a8b2;
+    position: absolute;
+    height:var(--page-height);
+    width: var(--page-width);
+    top:20%;
+    left: 33%;
+    padding:2px;
+    visibility: hidden;
+    transition: all 1.5s ease-out;
+}
+
+div.introduction{
+    display:inline;
+    overflow:scroll;
+    color: var(--header-text-color);
+}
+
+div.introduction img{
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 350px;
+}
+
+div.assignment{
+    display:inline;
+    height:auto; 
+    margin: auto;
+    top:32%;
+}
+
+
+div.portfolio{
+    display:inline;
+    margin:auto;
+    overflow:scroll;
+    text-align:left;
+}
+
+div.portfolio ol{
+    list-style-type: none;
+    list-style-image: none;
+}
+
+div.portfolio li:nth-child(odd){
+    box-shadow: 6px 9px 8px 2px #eaa3ab;
+}
+
+div.schedule{
+    display:inline;
+}
+
+table {
+    height:100%;
+    width:100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid #e195a0;
+}
+th, td{
+    padding:0;
+    empty-cells:hide;
+}
+tr:nth-child(even) {
+    background-color: #e195a0;
+  }
+
+th, td{
+    text-align: center;
+    vertical-align: middle;
+    color:var(--header-text-color);
+}
+
+div.contact{
+    display: inline;
+    height: 10vh;
+    width: 15vw;
+    left: 42%;
+    top:32%;
+}
+
+
+footer p{
+    background-color: var(--footbar-color);
+    border: 1px solid var(--footbar-outline);
+    border-radius: 50% 50% 52% 52% / 13% 13% 13% 13%;
+    display: inline-table;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.750em;
+    color: var(--footbar-text-color);
+    height: 2px;
+    left: 46%;
+    bottom: 0;
+}
+
+/* Effects */
+
+div.introduction:hover, div.portfolio:hover, div.assignment:hover, div.schedule:hover, div.contact:hover{
+    visibility: visible;
+    opacity: 1;
+    background-color:#facad1e7;
+   
+}
+
+div.introducton:hover > p, div.portfolio:hover >ol, div.schedule:hover > table, div.assignment:hover > ol, div.contact:hover > link{
+    visibility: visible;
+    opacity: 1;
+}
