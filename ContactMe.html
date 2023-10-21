@@ -6,123 +6,130 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale="1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+           
+            li{
+                font-weight:light;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Contact Me</h1>
+    <body style="background-image: url(img/clouds.jpeg); background-size:100%; background-attachment:fixed; ">
+
+        <div class="d-flex justify-content-center">
+            <h1 class="display-5">Contact Me</h1>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
                         <ul class="navbar-nav">
-                            <li class="nav-items"><a class="nav-link text-white" href="index.html">Homepage</a></li>
-                            <li class="nav-items"><a class="nav-link text-white" href="https://www.usca.edu">USCA's Website</a></li>
-                            <li class="nav-items"><a class="nav-link text-white" href="#assignment">Assignments</a></li>
-                            <li class="nav-items"><a class="nav-link text-white" href="#contact">Contact Information</a></li>
-                            <li class="nav-items"><a class="nav-link text-white" href="https://github.com/breckenmarie">My GitHub</a></li>
-                            <li class="nav-items"><a class="nav-link text-white" href="https://open.spotify.com/show/2Swqg3KD86p2dhRar7s6fk?si=3690cb4fdd244bfb">My Favorite Podcast</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="index.html">Homepage</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="https://www.usca.edu">USCA's Website</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="#assignment">Assignments</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="#contact">Contact Information</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="https://github.com/breckenmarie">My GitHub</a></li>
+                            <li class="nav-items"><a class="nav-link text-dark" href="https://open.spotify.com/show/2Swqg3KD86p2dhRar7s6fk?si=3690cb4fdd244bfb">My Favorite Podcast</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="video">
-                        <iframe width="400" height="250" frameborder="0" src="https://www.youtube.com/embed/gIIkb_Nsmio?si=gB2QF9MMKGtpvOdB"></iframe>
+                    <div class="embed-responsive embed-responsive-21by9 mt-2">
+                        <iframe class="embed-responsive-item" style="border: 2px solid white; border-radius: 25px;" width="650" height="500"src="https://www.youtube.com/embed/gIIkb_Nsmio?si=gB2QF9MMKGtpvOdB" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="col">
                      <div class="form">
                         <form>
                             <fieldset>
-
                                 <legend>Feedback</legend>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" placeholder="Anonymous" name="fname" id="fname" required>
-                                    <label for="fname"> First Name: </label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" placeholder="Anonymous" name="lname" id="lname" required>
-                                    <label for="lname"> Last Name: </label>
-                                </div>
-                                
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" placeholder="name@domain.com" name="mail" id="email">
-                                    <label for="email"> Email: </label>
-                                </div>
-
                                 <div class="form-group">
-                                    <label>
-                                        Telephone: <input type="tel" class="form-control" name="telephone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                                    </label>
-                                </div>
-        
-                                <!--Checkbox Code-->
-                                <div class="form-check">
-                                    <p>What are some things you like about this website?</p>
-
-                                    <input class="form-check-input" type="checkbox" name="thingsliked" value="Site Design" id="sitedesign">
-                                    <label class="form-check-label" for="sitedesign">Site Design</label>     
-
-                                    <input class="form-check-input" type="checkbox" name="thingsliked" value="Content" id="content">
-                                    <label class="form-check-label" for="content">Content</label>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" placeholder="Anonymous" name="fname" id="fname" required>
+                                        <label for="fname">First Name:</label>
+                                    </div>
+    
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" placeholder="Anonymous" name="lname" id="lname" required>
+                                        <label for="lname">Last Name:</label>
+                                    </div>
                                     
-                                    <input class="form-check-input" type="checkbox" name="thingsliked" value="Ease of Use" id="easeofuse">
-                                    <label class="form-check-label" for="easeofuse">Ease of Use</label>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" placeholder="name@domain.com" name="mail" id="email">
+                                        <label for="email">Email:</label>
+                                        <small class="form-text text-muted">bmerrill@usca.edu</small>
+                                    </div>
 
-                                    <input class="form-check-input" type="checkbox" name="thingsliked" value="Optimization" id="optimization">
-                                    <label class="form-check-label" for="optimization">Optimization</label>
+                                    <div class="form-floating mb-3">
+                                        <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                        <label for="telephone">Telephone:</label>
+                                    </div>
                                 </div>
-                                <p><!--Inserts a blank line in between input fields--></p>
+
+                                <!--Checkbox Code-->
+                                
+                                <div class="form-group mb-3">
+                                    <p>What are some things you like about this website?</p>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="thingsliked" value="Site Design" id="sitedesign">
+                                        <label class="form-check-label" for="sitedesign">Site Design</label>     
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="thingsliked" value="Content" id="content">
+                                        <label class="form-check-label" for="content">Content</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="thingsliked" value="Ease of Use" id="easeofuse">
+                                        <label class="form-check-label" for="easeofuse">Ease of Use</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="checkbox" name="thingsliked" value="Optimization" id="optimization">
+                                        <label class="form-check-label" for="optimization">Optimization</label>
+                                    </div>
+                                </div>
         
                                 <!--Radio Button Code-->
-                                <div class="form-check">
-                                    <label>
-                                        Would you recommend this website to a friend?<br>
-                                    </label>
-        
-                                    <label>
-                                        Yes <input class="form-check-input" type="radio" name="recommended" value="yes">
-                                    </label>
-        
-                                    <label>
-                                        No <input class="form-check-input" type="radio" name="recommended" value="no">
-                                    </label>
+
+                                <div class="form-group mb-3">
+                                    <p>Would you recommend this website to a friend?</p>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="radio" name="recommended" value="yes" id="yes">
+                                        <label class="form-check-label" for="yes">Yes</label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input class="form-check-input" type="radio" name="recommended" value="no" id="no">
+                                        <label class="form-check-label" for="no">No</label>
+                                    </div>
                                 </div>
 
-                                <p><!--Inserts a blank line in between input fields--></p>
-        
-                                <label>
-                                    Choose your favorite website: <br>
-                                    <select name="favsite">
-                                        <option value="Google">Google</option>
-                                        <option value="YouTube">YouTube</option>
-                                        <option value="Facebook">Facebook</option>
-                                        <option value="Instagram">Instagram</option>
-                                        <option value="Twitter">Twitter</option>
-                                    </select>
-                                </label>
-        
-                                <p><!--Inserts a blank line in between input fields--></p>
-        
-                                <label>
-                                    How would you rate your favorite website?<br>
-                                    1<input type="range" name="rating" min="1" max="10">10
-                                </label>
-        
-                                <p><!--Inserts a blank line in between input fields--></p>
-        
-                                <label>
-                                   Additional Comments<br>
-                                    <textarea name="comment" rows="5" cols="50"></textarea>
-                                </label>
-        
-                                <p>
-                                    <input type="submit" name="submit" value="Submit"> <input type="reset" name="reset" value="Reset">
-                                </p>
+                                <div class="form-group mb-3">
+                                    <p>Choose your favorite website:</p>
+                                    <select class="form-control" name="favsite">
+                                    <option value="Google">Google</option>
+                                    <option value="YouTube">YouTube</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Twitter">Twitter</option>
+                                </select>
+                                </div>
+
+                             <div class="form-group mb-3">
+                                <p>How would you rate your favorite website?</p>
+                                <input type="range" class="form-range" min="1" max="10" id="rating"> 
+                             </div>
+
+                             <div class="form-group mb-3">
+                                <label class="label-form" for="comment">Additional Comments<br></label>
+                                <textarea class="form-control" name="comment" id="comment" rows="5"></textarea>
+                             </div>
+
+                             <div class="form-group mb-3">
+                                <input class="btn btn-light" type="submit" value="Submit">
+                                <input class="btn btn-light" type="reset" value="Reset">
+                             </div>
                             </fieldset>
                         </form>
                     </div>
