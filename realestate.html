@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Real Estate Website</title>
+
+        <!--Imports CSS-->
+        <link rel="stylesheet" href="css/realestate.css">
+
+        <!--Jquery Library-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    </head>
+    <body>
+        <div class="navbar">
+            <table class="nav-bar">
+                <tr class="nav-items">
+                    <td class="item1">Buy</td>
+                    <td class="item2">Sell</td>
+                    <td class="item3" id="item3">Loan</td>
+                    <td class="item4">About</td>
+                </tr>
+            </table>
+        </div>
+        <div class="calculator" id="calculator">
+            <h4>Loan Information</h4>
+            <form action="" name="calculator">
+                <div class="form-group" id="one">
+                    <!--loan amount-->
+                    <label for="loanAmnt">Loan Amount: </label>
+                    <input type="text" class="form-control form-control-sm" id="loanAmnt">   
+                    <label for="loanAmnt">$</label>
+                </div> <!--End of loan amount-->
+
+                <!--interest rate-->
+                <div class="form-group" id="two">
+                    <label for="intRate">Interest Rate: </label>
+                    <input type="text" class="form-control form-control-sm" id="intRate">
+                    <label for="intRate">%</label>
+                </div> <!--End of interest rate-->
+
+                <!--loan term-->
+                <div class="form-group" id="three">
+                    <label for="loanTerm">Loan Term: </label>
+                    <input type="text" class="form-control form-control-sm" id="loanTerm">
+                    <label for="loanTerm">Years</label>
+                </div> <!--End of loan term-->
+
+                <!--start date-->
+                <div class="form-group" id="four">
+                    <label for="startMonth">Start Date: </label>
+                    <select class="form-control form-control-sm" id="startMonth">
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select class="form-control form-control-sm" id="startYear">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div> <!--End of start date-->
+
+                <!--display results-->
+                <div class="form-group" id="five">
+                    <label for="display">Show results by: </label>
+                    <select class="form-control form-control-sm" id="display">
+                        <option value="0">Monthly</option>
+                        <option value="1">Yearly</option>
+                    </select>
+                </div> <!--end of display results-->
+            </form> <!--End of form-->
+            <button type="button" class="button" id="calcBtn">Calculate</button>
+        </div>
+        <div class="results" id="results">
+            <table id="aTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Interest</th>
+                        <th>Principal</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="pResult" id="pResult">
+            <p>Monthly Payment: <span id="monPayment"></span></p>
+        </div>
+        <script src="js/loancalculator.js"></script>
+    </body>
+</html>
